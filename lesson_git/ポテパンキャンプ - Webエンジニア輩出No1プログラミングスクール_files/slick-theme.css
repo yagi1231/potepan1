@@ -1,0 +1,168 @@
+@charset 'UTF-8';
+
+/* Slider */
+
+.slick-loading .slick-list {}
+
+
+/* Icons */
+
+@font-face {
+	font-family: 'slick';
+	font-weight: normal;
+	font-style: normal;
+	src: url('./fonts/slick.eot');
+	src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+	position: absolute;
+	top: 44%;
+	z-index: 1;
+	transition: opacity 0.2s ease-in-out;
+	border: 0;
+	outline: none;
+	background-color: transparent;
+}
+
+.slick-prev {
+	background-image: url('../images/btn-left.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	left: -15px;
+}
+
+.slick-next {
+	background-image: url('../images/btn-right.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	right: -15px;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+	opacity: 0.6;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+	opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+	opacity: .25;
+}
+
+
+/* Dots */
+
+.slick-dots {
+	display: flex;
+	width: 30%;
+	padding: 0;
+	padding-top: 20px;
+	margin: 0 auto;
+	list-style: none;
+	justify-content: center;
+}
+
+.slick-dots li {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 25px;
+	height: 25px;
+	margin: 0 10px;
+	padding: 0;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.slick-dots li.slick-active button {
+	background-image: url('../images/btn-slide-control-click.png');
+	background-repeat: no-repeat;
+	width: 15px;
+	height: 15px;
+}
+
+.slick-dots li button {
+	background-image: url('../images/btn-slide-control-default.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	transition: opacity 0.2s ease-in-out;
+	display: block;
+	width: 12px;
+	height: 12px;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;
+	color: transparent;
+	border: 0;
+}
+
+.slick-dots li button:hover {
+	opacity: 0.6;
+}
+
+.slick-dots li.slick-active button:before {}
+
+
+/* ここからユニーク */
+/* TOPページ */
+.production-list .slick-next {
+	right: 5px;
+}
+
+.production-list .slick-prev {
+	left: 5px;
+}
+
+.pick-up-contents-list .slick-next {
+	right: 5px;
+}
+
+.pick-up-contents-list .slick-prev {
+	left: 5px;
+}
+
+.interview-else-list .slick-next {
+	right: -15px;
+}
+
+.interview-else-list .slick-prev {
+	left: -15px;
+}
+
+.interview-else-list .slick-next,
+.interview-else-list .slick-prev {
+	top: 40%;
+}
+
+@media screen and (max-width: 374px) {
+	.pick-up-contents-list .slick-next,
+	.pick-up-contents-list .slick-prev {
+		top: 16%;
+	}
+}
+
+
+
+
+
+
+

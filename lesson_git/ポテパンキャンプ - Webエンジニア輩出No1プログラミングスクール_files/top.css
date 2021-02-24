@@ -1,0 +1,718 @@
+/* ==================================================================================================================
+ Top style
+ ================================================================================================================== */
+/* =====================================
+ Module: contents-tidy
+ ===================================== */
+.engineer-name.contents-tidy {
+  flex-direction: column;
+}
+/* =====================================
+ Module: interview list
+ ===================================== */
+.interview-list {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.interview-list > li {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: calc(100% / 3);
+}
+@media screen and (max-width: 1070px) {
+  .interview-list {
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  .interview-list > li {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .interview-list > li + li {
+    margin-top: 20px;
+    padding-top: 30px;
+    border-top: solid 1px #efefef;
+  }
+}
+@media screen and (max-width: 840px) {
+  .interview-list {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .interview-list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+/* =====================================
+ Module: interview media
+ ===================================== */
+.interview-media .interview-media-thumbnail {
+  position: relative;
+  padding-top: 100%;
+}
+.interview-media .interview-media-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.interview-media .interview-thumbnail-titlebox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 80px 20px 15px;
+  background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+}
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f79314;
+}
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+  padding-top: 4px;
+  border-top: 1px solid #fff;
+}
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle > *:last-child {
+  font-size: 12px;
+  margin-left: 15px;
+}
+.interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle .name {
+  font-size: 20px;
+}
+.interview-media .interview-media-text {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+.interview-media-thumbnail {
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .interview-thumbnail-subtitle {
+    display: flex;
+    flex-direction: column;
+  }
+  .interview-media .interview-thumbnail-titlebox {
+    padding: 50px 10px 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0));
+  }
+  .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle > *:last-child {
+    margin-left: 0;
+  }
+  .interview-thumbnail-subtitle::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 13px;
+    right: 13px;
+    border-right: solid 3px #f79214;
+    border-top: solid 3px #f79214;
+    transform: rotate(45deg);
+  }
+  .interview-media .interview-media-text {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .interview-media .interview-thumbnail-titlebox {
+    padding: 40px 10px 10px;
+  }
+  .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle > *:last-child {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .interview-media .interview-thumbnail-titlebox {
+    padding: 35px 10px 10px;
+  }
+  .interview-media .interview-thumbnail-titlebox .interview-thumbnail-title {
+    font-size: 14px;
+  }
+  .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle {
+    font-size: 14px;
+  }
+  .interview-media .interview-thumbnail-titlebox .interview-thumbnail-subtitle .name {
+    font-size: 18px;
+  }
+}
+/* =============================================================
+ site-header
+ ============================================================= */
+.site-header {
+  width: 100%;
+  position: absolute;
+}
+/* =====================================
+ Module: production list
+ ===================================== */
+.production-list {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.production-list > .production-cassette {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: calc(100% / 3);
+}
+@media screen and (max-width: 767px) {
+  .production-list {
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .production-list > .production-cassette {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .production-list > .production-cassette + .production-cassette {
+    margin-top: 20px;
+    padding-top: 30px;
+  }
+}
+/* =====================================
+ Module: production media
+ ===================================== */
+.production-media .production-media-text {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+.production-media .production-media-thumbnail > img {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 767px) {
+  .production-media {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .production-media .production-media-text {
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .production-background {
+    top: 0;
+    right: 20px;
+    left: 20px;
+    position: absolute;
+    height: 100%;
+  }
+}
+/* =====================================
+ Module: service-list
+ ===================================== */
+.service-list {
+  margin-right: -20px;
+  margin-left: -20px;
+}
+.service-list > li {
+  padding-right: 20px;
+  padding-left: 20px;
+  width: calc(100% / 3);
+}
+.service-media-thumbnail {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 0 20px;
+  height: 190px;
+  box-sizing: border-box;
+}
+.service-media-thumbnail.red {
+  border-color: #fc6803;
+}
+.service-media-thumbnail.green {
+  border-color: #08af77;
+}
+.service-media-thumbnail.black {
+  border-color: #000;
+}
+.service-media-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+.service-media-text {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+}
+@media screen and (max-width: 767px) {
+  .service-list {
+    flex-direction: column;
+  }
+  .service-list > li {
+    width: 100%;
+  }
+  .service-list > li + li {
+    margin-top: 40px;
+  }
+  .service-media-text {
+    font-size: 15px;
+  }
+  .service-media-thumbnail {
+    justify-content: center;
+  }
+  .service-media-thumbnail img {
+    max-width: 280px;
+  }
+}
+/* =====================================
+ Module: top-hero
+ ===================================== */
+.section-top-hero {
+  padding-top: 190px;
+  padding-bottom: 28px;
+  background-image: url(../images/top-hero.png);
+  background-size: auto 100%;
+  background-position: right 0;
+  background-repeat: no-repeat;
+}
+.section-top-hero .proviso {
+  color: #888;
+  font-size: 10px;
+  max-width: 512px;
+  padding-top: 132px;
+}
+.top-hero-box {
+  position: relative;
+  max-width: 337px;
+}
+.top-hero-box > * + * {
+  margin-top: 30px;
+}
+.top-hero-box .top-hero-heading > img {
+  width: 100%;
+  height: auto;
+}
+.top-hero-box .top-hero-text {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 1.7;
+}
+.top-hero-box .top-hero-text > span {
+  color: #f79314;
+}
+.top-hero-box .No1-notation {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  right: -170px;
+}
+.top-hero-box .No1-notation img {
+  width: 154px;
+  height: 154px;
+}
+@media screen and (max-width: 767px) {
+  .section-top-hero {
+    padding-top: 258px;
+    padding-bottom: 12px;
+    background-image: url(../images/top-hero-sp.png);
+  }
+  .section-top-hero .proviso {
+    padding-top: 24px;
+  }
+  .top-hero-box {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .top-hero-box > * + * {
+    margin-top: 20px;
+  }
+  .top-hero-box .top-hero-text {
+    font-size: 15px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+}
+@media screen and (max-width: 414px) {
+  .section-top-hero .top-hero-text {
+    text-align: center;
+  }
+  .section-top-hero .top-hero-box .No1-notation {
+    top: -98px;
+    left: -24px;
+  }
+  .section-top-hero .top-hero-box .No1-notation img {
+    width: 88px;
+    height: 88px;
+  }
+}
+/* =====================================
+ Module: engineer-list
+ ===================================== */
+.engineer-list {
+  margin-top: 45px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.engineer-list .engineer-box {
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 15px;
+  width: calc(100% / 3);
+}
+/*.engineer-list > .engineer-box > .enginner-cassette {
+ padding: 20px;
+ }*/
+.engineer-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  padding: 20px;
+}
+.engineer-conpany-logo {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.engineer-conpany-logo > img {
+  width: 100%;
+}
+.engineer-profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.engineer-name {
+  text-align: start;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.engineer-name > span {
+  color: #f79314;
+  font-size: 14px;
+}
+.engineer-text {
+  width: 100%;
+  position: relative;
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-align: start;
+}
+.engineer-text::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 29px;
+  margin-left: -15px;
+  border: 15px solid transparent;
+  border-bottom: 15px solid #f6f6f6;
+}
+@media screen and (max-width: 767px) {
+  .engineer-list {
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .engineer-list .engineer-box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .engineer-text {
+    font-size: 15px;
+  }
+  .engineer-media {
+    padding: 10px 20px 20px;
+  }
+  .engineer-media .engineer-text > p {
+    line-height: 2;
+  }
+}
+/* =====================================
+ Module: course-list
+ ===================================== */
+.course-list > li + li {
+  margin-top: 40px;
+}
+.course-media {
+  font-weight: bold;
+  padding: 30px;
+  background-color: #fff;
+}
+.course-title {
+  width: 30%;
+  margin-left: -50px;
+  margin-right: 30px;
+  border: solid 3px;
+}
+.course-media.career .course-title {
+  border-image: linear-gradient(to right, #f79214 0%, #f74e06 100%);
+  border-image-slice: 1;
+}
+.course-media.beginner .course-title {
+  border-image: linear-gradient(to right, #1bb289 0%, #49c766 100%);
+  border-image-slice: 1;
+}
+.course-media.open .course-title {
+  border-image: linear-gradient(to right, #ff6d00 0%, #f79214 100%);
+  border-image-slice: 1;
+}
+.course-title h3 {
+  font-size: 24px;
+  text-align: center;
+}
+.course-title h3 span {
+  font-size: 14px;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 5px;
+}
+.course-media.career .title-label {
+  background-color: #f75307;
+}
+.course-media.beginner .title-label {
+  background-color: #49c766;
+}
+.course-contents {
+  width: calc(70% + 30px);
+  position: relative;
+}
+.course-media.career .course-text {
+  color: #f75307;
+}
+.course-media.beginner .course-text {
+  color: #49c766;
+}
+.course-media.open .course-text {
+  color: #f79314;
+}
+.course-text {
+  font-size: 16px;
+  line-height: 1;
+}
+.course-contents > div {
+  margin-top: 20px;
+}
+.course-contents > div p {
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  background: linear-gradient(90deg, #212121, #444);
+  padding: 2px 20px;
+  border-radius: 20px;
+}
+.conditions-list {
+  margin-top: 7px;
+  padding-bottom: 20px;
+}
+.course-link {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 12px;
+  color: #999;
+}
+.course-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 4px;
+  right: -18px;
+  border-right: solid 3px #f79214;
+  border-top: solid 3px #f79214;
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 1024px) {
+
+  .top-hero-box .No1-notation {
+    top: -168px;
+    right: 0;
+    left: -28px;
+  }
+  .proviso p {
+    background-color: rgba(255, 255, 255, .3);
+    color: #000;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .course-list > li + li {
+    margin-top: 60px;
+  }
+  .course-media {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .course-title {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    height: 120px;
+    margin-top: -40px;
+  }
+  .course-contents {
+    width: 100%;
+    margin-top: 25px;
+    padding-right: 0;
+  }
+  .course-text {
+    line-height: 1.5;
+  }
+  .course-contents > div {
+    margin-top: 25px;
+  }
+  .conditions-list {
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 0;
+  }
+  .course-link {
+    position: static;
+    text-align: right;
+    margin-top: 25px;
+    padding-right: 20px;
+  }
+  .course-link::after {
+    right: 0;
+  }
+  .course-title h3 {
+    font-size: 20px;
+  }
+  .course-title h3 span {
+    font-size: 12px;
+  }
+  .top-hero-box .No1-notation {
+    top: -118px;
+    left: -56px;
+  }
+  .top-hero-box .No1-notation img {
+    width: 120px;
+    height: 120px;
+  }
+  .proviso p {
+    background-color: inherit;
+    color: inherit;
+    padding: none;
+  }
+}
+/* =====================================
+ Module: message-contents
+ ===================================== */
+.message-background {
+  background-color: #0ff;
+}
+.message-title {
+  display: inline-block;
+  font-size: 50px;
+  color: #ff802c;
+  background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  letter-spacing: 3px;
+  position: relative;
+  z-index: 1;
+  margin-left: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+}
+.message-contents {
+  margin-top: -20px;
+  position: relative;
+}
+.message-text {
+  background-color: #fff;
+  padding: 40px 150px 40px 40px;
+  margin-right: -100px;
+}
+.message-text p {
+  line-height: 2;
+  font-weight: 500;
+}
+.message-text p + p {
+  margin-top: 40px;
+}
+.message-thumbnail {
+  position: relative;
+}
+.message-thumbnail p {
+  position: absolute;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px 10px #808080;
+}
+.message-thumbnail p span {
+  font-size: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .message-contents {
+    flex-direction: column;
+    position: relative;
+    background-color: #fff;
+    padding: 45px 40px 40px;
+  }
+  .message-title {
+    font-size: 32px;
+    background: -webkit-linear-gradient(0deg, #ff802c, #f79214);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .message-text {
+    padding: 0;
+    margin-right: 0;
+    margin-top: 30px;
+    order: 2;
+  }
+  .message-thumbnail {
+    order: 1;
+  }
+  .message-thumbnail > img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 413px) {
+  .message-thumbnail p {
+    font-size: 14px;
+    font-size: 12px;
+    padding: 15px;
+  }
+  .message-thumbnail p span {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .message-thumbnail p {
+    padding: 5px;
+  }
+}
+/*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sourceRoot%22%3A%22%5C%2F%22%2C%22sources%22%3A%5B%22wp-content%5C%2Fthemes%5C%2Fpotepancamp%5C%2Fassets%5C%2Fscss%5C%2Ftop.scss%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22AAAD%3B%3BsHAAA%3BAAAA%3B%3ByCAAA%3BAAQC%3BAAAA%2CyBAAA%3BAAAA%3BAARD%3B%3ByCAAA%3BAAgBC%3BAAAA%3BsBAAA%3BAAAA%3BAAIE%3BAAAA%3B%3BwBAAA%3BAAAA%3BAAOF%3BAACE%3BAAAA%3B%3B%3B%3ByBAAA%3BAAAA%3BAAOE%3BAAAA%3B%3BgBAAA%3BAAAA%3BAAKE%3BAAAA%3B%3BkCAAA%3BAAAA%3BAAAA%3BAASN%3BAACE%3BAAAA%3BwBAAA%3BAAAA%3BAAAA%3BAAMF%3BAACE%3BAAAA%3BwBAAA%3BAAAA%3BAAAA%3BAAzDH%3B%3ByCAAA%3BAAoEG%3BAAAA%3BoBAAA%3BAAAA%3BAAIE%3BAAAA%3B%3B%3B%3B%3BUAAA%3BAAAA%3BAAUF%3BAAAA%3B%3B%3B%3B%3B%3B0GAAA%3BAAAA%3BAASE%3BAAAA%3B%3BiBAAA%3BAAAA%3BAAMA%3BAAAA%3B%3B%3B%3B%3B6BAAA%3BAAAA%3BAAQE%3BAAAA%3BoBAAA%3BAAAA%3BAAKA%3BAAAA%2CkBAAA%3BAAAA%3BAAMJ%3BAAAA%3B%3B%3BmBAAA%3BAAAA%3BAAQF%3BAAAA%2CmBAAA%3BAAAA%3BAAIA%3BAACE%3BAAAA%3B2BAAA%3BAAAA%3BAAKA%3BAAAA%3BqFAAA%3BAAAA%3BAAIE%3BAAAA%2CmBAAA%3BAAAA%3BAAKF%3BAAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B6BAAA%3BAAAA%3BAAaA%3BAAAA%2CqBAAA%3BAAAA%3BAAAA%3BAAKF%3BAACE%3BAAAA%2C4BAAA%3BAAAA%3BAAGE%3BAAAA%2CoBAAA%3BAAAA%3BAAAA%3BAAMJ%3BAACE%3BAAAA%2C4BAAA%3BAAAA%3BAACE%3BAAAA%2CoBAAA%3BAAAA%3BAAIA%3BAAAA%2CoBAAA%3BAAAA%3BAAGE%3BAAAA%2CoBAAA%3BAAAA%3BAAAA%3BAApLP%3B%3BiEAAA%3BAAiMC%3BAAAA%3BqBAAA%3BAAAA%3BAAjMD%3B%3ByCAAA%3BAA0MC%3BAAAA%3BsBAAA%3BAAAA%3BAAIE%3BAAAA%3B%3BwBAAA%3BAAAA%3BAAOF%3BAACE%3BAAAA%3B%3B%3B%3B%3BwBAAA%3BAAAA%3BAAQE%3BAAAA%3B%3BgBAAA%3BAAAA%3BAAKE%3BAAAA%3BsBAAA%3BAAAA%3BAAAA%3BAAnOP%3B%3ByCAAA%3BAAgPG%3BAAAA%3B%3B%3BmBAAA%3BAAAA%3BAAOA%3BAAAA%3BeAAA%3BAAAA%3BAAMF%3BAACE%3BAAAA%3B%3BwBAAA%3BAAAA%3BAAKE%3BAAAA%3B%3B%3BwBAAA%3BAAAA%3BAAQF%3BAAAA%3B%3B%3B%3BiBAAA%3BAAAA%3BAAAA%3BAA3QH%3B%3ByCAAA%3BAAwRC%3BAAAA%3BqBAAA%3BAAAA%3BAAIE%3BAAAA%3B%3BwBAAA%3BAAAA%3BAAOF%3BAAAA%3B%3B%3B%3B%3B%3B%3ByBAAA%3BAAAA%3BAAUE%3BAAAA%2CwBAAA%3BAAAA%3BAAIA%3BAAAA%2CwBAAA%3BAAAA%3BAAIA%3BAAAA%2CqBAAA%3BAAAA%3BAAIA%3BAAAA%3BeAAA%3BAAAA%3BAAMF%3BAAAA%3B%3B%3BmBAAA%3BAAAA%3BAAOA%3BAACE%3BAAAA%2C2BAAA%3BAAAA%3BAAGE%3BAAAA%2CgBAAA%3BAAAA%3BAAGE%3BAAAA%2CqBAAA%3BAAAA%3BAAMJ%3BAAAA%2CoBAAA%3BAAAA%3BAAIA%3BAAAA%2C4BAAA%3BAAAA%3BAAGE%3BAAAA%2CqBAAA%3BAAAA%3BAAAA%3BAA1VL%3B%3ByCAAA%3BAAoWC%3BAAAA%3B%3B%3B%3B%3B%2BBAAA%3BAAAA%3BAAQE%3BAAAA%3B%3B%3BqBAAA%3BAAAA%3BAAQF%3BAAAA%3BmBAAA%3BAAAA%3BAAIE%3BAAAA%2CmBAAA%3BAAAA%3BAAIA%3BAAAA%3BeAAA%3BAAAA%3BAAKA%3BAAAA%3B%3B%3B%3BmBAAA%3BAAAA%3BAAOE%3BAAAA%2CiBAAA%3BAAAA%3BAAKF%3BAAAA%3B%3B%3BgBAAA%3BAAAA%3BAAME%3BAAAA%3BgBAAA%3BAAAA%3BAASJ%3BAACE%3BAAAA%3B%3BqDAAA%3BAAAA%3BAAKE%3BAAAA%2CsBAAA%3BAAAA%3BAAKF%3BAAAA%3B%3BuBAAA%3BAAAA%3BAAKE%3BAAAA%2CqBAAA%3BAAAA%3BAAIA%3BAAAA%3BmDAAA%3BAAAA%3BAAAA%3BAAOJ%3BAAEI%3BAAAA%2CuBAAA%3BAAAA%3BAAIE%3BAAAA%3BgBAAA%3BAAAA%3BAAIE%3BAAAA%3BiBAAA%3BAAAA%3BAAAA%3BAAjcT%3B%3ByCAAA%3BAA8cC%3BAAAA%3B%3BsBAAA%3BAAAA%3BAAKE%3BAAAA%3B%3B%3BwBAAA%3BAAAA%3BAAndH%3B%3BIAAA%3BAA%2BdC%3BAAAA%3B%3B%3B%3BgBAAA%3BAAAA%3BAAQA%3BAAAA%3B%3B%3B0BAAA%3BAAAA%3BAAME%3BAAAA%2CcAAA%3BAAAA%3BAAKF%3BAAAA%3B%3BcAAA%3BAAAA%3BAAMA%3BAAAA%3B%3BkBAAA%3BAAAA%3BAAKE%3BAAAA%3BkBAAA%3BAAAA%3BAAMF%3BAAAA%3B%3B%3B%3B%3B%3BoBAAA%3BAAAA%3BAASE%3BAAAA%3B%3B%3B%3B%3B%3BoCAAA%3BAAAA%3BAAWF%3BAACE%3BAAAA%3B%3B%3BoBAAA%3BAAAA%3BAAME%3BAAAA%3BoBAAA%3BAAAA%3BAAMF%3BAAAA%2CoBAAA%3BAAAA%3BAAIA%3BAAAA%2C4BAAA%3BAAAA%3BAAGE%3BAAAA%2CmBAAA%3BAAAA%3BAAAA%3BAA3iBL%3B%3ByCAAA%3BAAqjBC%3BAAAA%2CmBAAA%3BAAAA%3BAAIA%3BAAAA%3B%3ByBAAA%3BAAAA%3BAAMA%3BAAAA%3B%3B%3BoBAAA%3BAAAA%3BAAQE%3BAAAA%3BwBAAA%3BAAAA%3BAAKA%3BAAAA%3BwBAAA%3BAAAA%3BAAKA%3BAAAA%3BwBAAA%3BAAAA%3BAAMF%3BAAAA%2CkBAAA%3BAAAA%3BAAGE%3BAAAA%3B%3B%3BkBAAA%3BAAAA%3BAASA%3BAAAA%2C4BAAA%3BAAAA%3BAAIA%3BAAAA%2C4BAAA%3BAAAA%3BAAKF%3BAAAA%3BqBAAA%3BAAAA%3BAAME%3BAAAA%2CiBAAA%3BAAAA%3BAAIA%3BAAAA%2CiBAAA%3BAAAA%3BAAIA%3BAAAA%2CiBAAA%3BAAAA%3BAAKF%3BAAAA%3BiBAAA%3BAAAA%3BAAKA%3BAAAA%2CmBAAA%3BAAAA%3BAAGE%3BAAAA%3B%3B%3B%3B%3BsBAAA%3BAAAA%3BAAUF%3BAAAA%3BuBAAA%3BAAAA%3BAAKA%3BAAAA%3B%3B%3B%3BcAAA%3BAAAA%3BAAOE%3BAAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B2BAAA%3BAAAA%3BAAcF%3BAAAA%2CgBAAA%3BAAAA%3BAAIA%3BAACE%3BAAAA%2CmBAAA%3BAAAA%3BAAKE%3BAAAA%3B%3BgBAAA%3BAAAA%3BAAOA%3BAAAA%3B%3BiBAAA%3BAAAA%3BAAAA%3BAAQJ%3BAACE%3BAAAA%2CkBAAA%3BAAAA%3BAAIA%3BAAAA%2CqBAAA%3BAAAA%3BAAIA%3BAAAA%3BkBAAA%3BAAAA%3BAAKA%3BAAAA%3B%3B%3B%3BsBAAA%3BAAAA%3BAAQA%3BAAAA%3B%3BqBAAA%3BAAAA%3BAAMA%3BAAAA%2CqBAAA%3BAAAA%3BAAIA%3BAAAA%2CqBAAA%3BAAAA%3BAAIA%3BAAAA%3B%3BsBAAA%3BAAAA%3BAAMA%3BAAAA%3B%3B%3BwBAAA%3BAAAA%3BAAME%3BAAAA%2CaAAA%3BAAAA%3BAAKF%3BAAAA%2CoBAAA%3BAAAA%3BAAGE%3BAAAA%2CoBAAA%3BAAAA%3BAAMA%3BAAAA%3BgBAAA%3BAAAA%3BAAIE%3BAAAA%3BkBAAA%3BAAAA%3BAAOF%3BAAAA%3B%3BkBAAA%3BAAAA%3BAAAA%3BAA7wBL%3B%3ByCAAA%3BAAyxBC%3BAAAA%2CyBAAA%3BAAAA%3BAAIA%3BAAAA%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BmBAAA%3BAAAA%3BAAgBA%3BAAAA%3BqBAAA%3BAAAA%3BAAKA%3BAAAA%3B%3BuBAAA%3BAAAA%3BAAKE%3BAAAA%3BmBAAA%3BAAAA%3BAAIE%3BAAAA%2CmBAAA%3BAAAA%3BAAMJ%3BAAAA%2CqBAAA%3BAAAA%3BAAGE%3BAAAA%3B%3B%3B%3B%3BoCAAA%3BAAAA%3BAAQE%3BAAAA%2CkBAAA%3BAAAA%3BAAMJ%3BAACE%3BAAAA%3B%3B%3B4BAAA%3BAAAA%3BAAOA%3BAAAA%3B%3B%3ByCAAA%3BAAAA%3BAAOA%3BAAAA%3B%3B%3BaAAA%3BAAAA%3BAAOA%3BAAAA%2CaAAA%3BAAAA%3BAAGE%3BAAAA%2CgBAAA%3BAAAA%3BAAAA%3BAAMJ%3BAACE%3BAAAA%3B%3BkBAAA%3BAAAA%3BAAGE%3BAAAA%2CoBAAA%3BAAAA%3BAAAA%3BAASJ%3BAACE%3BAAAA%2CiBAAA%3BAAAA%3BAAAA%22%7D */

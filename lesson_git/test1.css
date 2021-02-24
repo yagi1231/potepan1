@@ -1,0 +1,71 @@
+position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 80px 20px 15px;
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 55%, rgba(30, 30, 30, 0.7), rgba(50, 50, 50, 0));
+}
+
+
+
+
+<ul class="interview-list">
+                         <li >
+                             <a class="interview-media" href="https://camp.potepan.com/interview/691">
+                                 <div class="interview-list-thumbnail">
+                                     <img class="hover-scale sp-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg" alt="">
+                                     <div class="interview-thumbnail-titlebox">
+                                         <p class="interview-thumbnail-title">選抜クラス　キャリアコース</p>
+                                         <p class="interview-thumbnail-subtitle">
+                                             H.Y<span>さん</span>
+                                             <span>前職：メガネ量販店の販売員</span>
+                                         </p>
+                                     </div>
+                                 </div>
+                                 <p lass="interview-media-text hover-text-color">    30歳で、メガネ量販店の販売員から受託企業のエンジニアに転職成功されたH.Yさん。30歳での未経験転職の心得などお伺いしました！ </p>
+                             </a>
+                         </li>
+                         
+                                <li >
+                             <a class="interview-media" href="https://camp.potepan.com/interview/691">
+                                 <div class="interview-list-thumbnail">
+                                     <img class="hover-scale sp-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg" alt="">
+                                     <div class="interview-thumbnail-titlebox">
+                                         <p class="interview-thumbnail-title">選抜クラス　キャリアコース</p>
+                                         <p class="interview-thumbnail-subtitle">
+                                             H.Y<span>さん</span>
+                                             <span>前職：メガネ量販店の販売員</span>
+                                         </p>
+                                     </div>
+                                 </div>
+                                 <p lass="interview-media-text hover-text-color">    30歳で、メガネ量販店の販売員から受託企業のエンジニアに転職成功されたH.Yさん。30歳での未経験転職の心得などお伺いしました！ </p>
+                             </a>
+                         </li>
+                         
+                                <li >
+                             <a class="interview-media" href="https://camp.potepan.com/interview/691">
+                                 <div class="interview-list-thumbnail">
+                                     <img class="hover-scale sp-dn" src="https://camp.potepan.com/wp-content/uploads/2020/12/131478795_397238574816551_3842722825712242700_n.jpg" alt="">
+                                     <div class="interview-thumbnail-titlebox">
+                                         <p class="interview-thumbnail-title">選抜クラス　キャリアコース</p>
+                                         <p class="interview-thumbnail-subtitle">
+                                             H.Y<span>さん</span>
+                                             <span>前職：メガネ量販店の販売員</span>
+                                         </p>
+                                     </div>
+                                 </div>
+                                 <p lass="interview-media-text hover-text-color">    30歳で、メガネ量販店の販売員から受託企業のエンジニアに転職成功されたH.Yさん。30歳での未経験転職の心得などお伺いしました！ </p>
+                             </a>
+                         </li>
+                          </ul>
+                         <div class="section-button">
+                             <a href="/interview" class="link-button hover-opacity">
+                                 <span>INTERVIEW</span>
+                                 <span>受講者の声</span>
+                             </a>
+                         </div>
+                         
+                  </div>
+      
+     </div>

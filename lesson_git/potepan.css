@@ -1,0 +1,145 @@
+* {
+    padding:0;
+    margin:0;
+
+}
+a {
+text-decoration: none;
+}
+
+.main-section-img img {
+    width:500px;
+
+}
+.main-section-img img {
+    width:500px;
+}
+.header {
+padding-top :20px;
+height:600px;
+background-image:url("top-hero .png");
+  width:100%;
+}
+
+.site-header {
+
+      width:100%;
+ height:600px;
+    float:left;
+    padding-top:20px;
+    
+    
+}
+.header-logo {
+ 
+    float:left;
+}
+.header-logo img {
+
+width:50%;
+
+}
+.header-right {
+display:block;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+      font-weight: 700;
+      
+
+}
+.header-right :hover{
+    opacity:0.7;
+}
+.header-right li{
+      float:left;
+}
+
+.header-right-outline span {
+      color:black;
+      font-family:'Noto Sans JP', sans-serif;
+      margin-right:25px;
+      line-height: 0.1;
+}
+.header-right-outline span:first-child {
+    font-size:14px;
+
+} 
+.header-right-outline span:last-child {
+    font-size:8px;
+}
+.header-right-outline .header-right.btn {
+    background-color: #f79314;
+  display:block;
+    padding:10px 20px;
+    border-radius:30px;
+  margin:0 auto;
+  font-weight:bold;
+  margin:0 auto;
+
+ 
+}
+.header-right-outline .header-right.btn span{ 
+    color:white;
+   
+}
+
+.secition-title-hero-header img {
+    width:400px;
+}
+.section-title-hero.btn a{
+    background-color: #f79314;
+
+    padding:20px 40px;
+    border-radius:30px;
+  margin:0 auto;
+  font-weight: bold;
+  }
+  .section-title-hero-text {
+      font-size:20px;
+      font-weight:400px;
+      letter-spacing: 2px;
+      padding:20px 0 40px 0;
+  }
+.section-title-hero-text span{
+    color:#f79314;
+}
+.section-title-hero.btn {
+      background-color: #f79314;
+
+    padding:20px 100px;
+    border-radius:30px;
+  margin:0 auto;
+  font-weight: bold;
+}
+.section-title-hero.btn span {
+    color:white;
+}
+.section-title-hero.btn:hover{
+    opacity:0.5;
+}
+
+.caution {
+    font-size:10px;
+    opacity:0.5;
+}
+.main {
+    width:100%;
+}
+.main-section-width{
+    height:600px;
+    background-color: #f79314;
+}
+.main-section-btn {
+      background-color: white;
+  display:block;
+    padding:10px 20px;
+    border-radius:30px;
+  margin:0 auto;
+  font-weight:bold;
+  margin:0 auto;
+}
+.main-section-btn a{
+     background-color: white;
+}
+
